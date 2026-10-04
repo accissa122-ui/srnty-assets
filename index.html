@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>إدارة الأصول الثابتة لمجموعة فنادق سيرينتي</title>
+<style>
+:root{--bg:#f4f6f9;--c:#fff;--t:#1d2733;--m:#66727f;--b:#dce1e7;--p:#1f4e8c;--ok:#1b7f4d;--wn:#b45309;--bd:#b42318;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13171c;--c:#1c222a;--t:#e6eaee;--m:#98a2ae;--b:#2e3741;--p:#6ea3e6;--ok:#52c48a;--wn:#f0a64a;--bd:#f08a80}}
+:root[data-theme="dark"]{--bg:#13171c;--c:#1c222a;--t:#e6eaee;--m:#98a2ae;--b:#2e3741;--p:#6ea3e6;--ok:#52c48a;--wn:#f0a64a;--bd:#f08a80}
+html,body{height:auto;margin:0}
+body{background:var(--bg);color:var(--t);font:15px/1.5 Tahoma,Arial,sans-serif;padding:0 14px 40px}
+h1{font-size:20px;margin:16px 0 4px}p.s{margin:0 0 14px;color:var(--m);font-size:13px}
+.k{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}
+.k div{background:var(--c);border:1px solid var(--b);border-radius:10px;padding:10px 12px;color:var(--m);font-size:13px}
+.k b{display:block;font-size:24px;color:var(--t)}.k .w b{color:var(--wn)}
+nav{display:flex;gap:6px;margin-bottom:12px}
+button,input,select{font:inherit;color:var(--t)}
+button{background:var(--c);border:1px solid var(--b);border-radius:8px;padding:6px 12px;cursor:pointer}
+nav button{flex:1;padding:9px}nav button.on,button.p{background:var(--p);color:#fff;border-color:var(--p)}
+button.r{color:var(--bd)}button.x{background:var(--bd);border-color:var(--bd);color:#fff}
+input,select{background:var(--c);border:1px solid var(--b);border-radius:8px;padding:8px 10px;min-width:0}
+.bar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}.bar input{flex:1;min-width:140px}.bar select{flex:2;min-width:160px}
+.sc{overflow-x:auto;background:var(--c);border:1px solid var(--b);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:620px}th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--b);vertical-align:middle}
+th{color:var(--m);font-size:12px;font-weight:600}tr:last-child td{border-bottom:0}
+td.ac{white-space:nowrap}td.ac button{padding:3px 8px;font-size:13px;margin-inline-start:4px}
+.g{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;border:1px solid var(--b);color:var(--m)}
+.g.o{color:var(--ok);border-color:var(--ok)}.g.w{color:var(--wn);border-color:var(--wn)}
+.rm{background:var(--c);border:1px solid var(--b);border-radius:10px;padding:10px 12px;margin-bottom:10px}
+.rm h4{margin:0 0 8px;font-size:15px}.rm small{color:var(--m);font-weight:400;margin-inline-start:8px}
+.ch{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--b);border-radius:8px;padding:3px 4px 3px 8px;margin:0 0 6px 6px;font-size:13px}
+.ch i{color:var(--m);font-style:normal;font-size:11px}.ch button{border:0;padding:0 6px;color:var(--bd);background:none}
+.em{color:var(--m);text-align:center;padding:26px 10px}
+dialog{background:var(--c);color:var(--t);border:1px solid var(--b);border-radius:12px;width:min(92vw,420px);padding:16px}
+dialog h3{margin:0 0 10px}dialog label{display:block;font-size:13px;color:var(--m);margin-bottom:10px}
+dialog input,dialog select{display:block;width:100%;box-sizing:border-box;margin-top:4px;font-size:15px}
+.bt{display:flex;gap:8px;justify-content:flex-start;margin-top:6px}.h{padding-inline-start:18px;max-height:50vh;overflow:auto;margin:0 0 10px}.h li{margin-bottom:6px;font-size:13px}
+#t{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--t);color:var(--bg);padding:8px 16px;border-radius:99px;font-size:14px}
+.gr{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}.rc{background:var(--c);border:1px solid var(--b);border-radius:10px;padding:10px;text-align:center}.rc b{display:block;font-size:22px}.rc span{display:block;color:var(--m);font-size:12px;margin-bottom:8px}.rc button{width:100%}.bar h2{margin:0;flex:1;font-size:18px;align-self:center}
+.xt input{margin:0!important;padding:4px 6px;font-size:13px}.xt input[type=checkbox]{width:auto!important;display:inline!important}.xt input.n{width:64px!important}.xt input.rr{width:110px!important}.xt td,.xt th{padding:4px 6px}.xt{margin-top:8px}
+.mp{display:grid;grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:6px;margin-top:10px}.mp label{margin:0!important}
+#pr{display:none}
+#pr.on{display:block;position:fixed;inset:0;background:#e6e7ea;overflow:auto;z-index:50;padding:calc(14px + env(safe-area-inset-top,0px)) 12px 28px;font-family:Tahoma,Arial,sans-serif;color:#161618;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+#pr .np{display:flex;gap:8px;max-width:794px;margin:0 auto 12px}
+#pr .np button{background:#161618;color:#fff;border-color:#161618}#pr .np button+button{background:#fff;color:#161618;border-color:#c9cbd0}
+#pr .pg{max-width:794px;margin:0 auto;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.18);border-radius:6px;overflow:hidden}
+#pr .ph{background:#161618;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 28px}
+#pr .ph img{height:44px;width:auto;display:block}
+#pr .ph div{text-align:left}#pr .ph small{display:block;color:#a9aeb5;font-size:12px}#pr .ph b{display:block;font-size:30px;line-height:1.15;font-weight:700}
+#pr .pb{padding:22px 28px 10px}
+#pr .st{display:flex;gap:10px;margin-bottom:18px}#pr .st div{flex:1;border:1px solid #d9dbe0;border-radius:8px;padding:9px 12px;font-size:12px;color:#6b7078}#pr .st b{display:block;font-size:18px;color:#161618;margin-top:2px}
+#pr table{width:100%;border-collapse:collapse;min-width:0}
+#pr th{background:#161618;color:#fff;font-weight:600;font-size:13px;padding:9px 12px;text-align:right}
+#pr td{padding:9px 12px;font-size:14px;border-bottom:1px solid #e3e5e9;text-align:right;color:#161618}
+#pr tr:nth-child(even) td{background:#f5f6f8}#pr .c{text-align:center;width:90px}#pr .m{width:48px}#pr td.m{color:#6b7078}#pr td.c{font-weight:700}#pr tr.tt th{background:#2a2b2f}
+#pr .sg{display:flex;gap:30px;margin-top:34px}#pr .sg div{flex:1;border-top:1px solid #9aa0a8;padding-top:6px;font-size:12px;color:#6b7078}
+#pr .ft{text-align:center;color:#8b9098;font-size:11px;padding:14px 0 18px}
+@page{size:A4;margin:10mm}
+@media print{body{background:#fff!important;padding:0}body>*:not(#pr){display:none!important}#pr.on{position:static;background:#fff;padding:0;overflow:visible}#pr .np{display:none}#pr .pg{box-shadow:none;border-radius:0;max-width:none}#pr tr{break-inside:avoid}}
+.hd{background:#161618;border-radius:12px;padding:14px 16px;margin:12px 0 14px;display:flex;align-items:center;gap:16px}.hd img{height:40px;width:auto;flex:none}.hd h1{margin:0;font-size:18px;color:#fff}.hd p.s{margin:2px 0 0;color:#a9aeb5}
+#lk{position:fixed;inset:0;z-index:100;background:#161618;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px;text-align:center}#lk[hidden]{display:none}#lk img{height:48px}#lk input{width:min(280px,80vw);text-align:center;background:#222226;color:#fff;border-color:#3a3b40}#lk h2{margin:8px 0 0;font-size:18px}#lk p{margin:0;color:#a9aeb5}#lk #le{color:#f08a80}
+.hb{margin-inline-start:auto;display:flex;gap:6px;flex-wrap:wrap}.hb button{background:transparent;color:#fff;border-color:#3a3b40;font-size:12px}
+.rm summary{cursor:pointer;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-weight:700;list-style:none}.rm summary::-webkit-details-marker{display:none}.rm summary .sp{margin-inline-start:auto;display:flex;gap:4px}.rm .bd{margin-top:10px}
+</style></head><body>
+<header class="hd"><img id="lg0" alt="SRNTY"><div><h1>إدارة الأصول الثابتة لمجموعة فنادق سيرينتي</h1><p class="s">تسجيل الأصول وتوزيعها على الغرف ومتابعة إرسالها للصيانة وعودتها</p></div><div class="hb" id="hb"></div></header>
+<div id="app"></div><dialog id="d"></dialog><div id="t" hidden></div><div id="pr"></div><div id="lk"></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+// ضع هنا بيانات مشروع Firebase الخاص بك (راجع ملف README-ar.md، الخطوة 5)
+window.FIREBASE_CONFIG = {
+  apiKey: "AIzaSyDVCUWvOTgjidl7yo-1yPHikDj1R8KEcCE",
+  authDomain: "srnty-group.firebaseapp.com",
+  projectId: "srnty-group",
+  storageBucket: "srnty-group.firebasestorage.app",
+  messagingSenderId: "940207941485",
+  appId: "1:940207941485:web:fdc94b4c3974b5080f1c64"
+};
+</script>
+<script>
+// طبقة ربط: قاعدة البيانات (Firestore) والتنزيلات خارج Claude
+(function () {
+  const cfg = window.FIREBASE_CONFIG;
+  const dl = {
+    save: async ({ filename, data }) => {
+      const blob = data instanceof Blob ? data : new Blob([data], { type: 'text/html' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = filename;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    }
+  };
+  window.claude = { use: async k => (k === 'downloads' ? dl : null) };
+  if (!window.firebase || !cfg || !cfg.apiKey || cfg.apiKey === 'PASTE') { window.FB_OFF = true; return; }
+  firebase.initializeApp(cfg);
+  firebase.firestore().settings({ experimentalAutoDetectLongPolling: true, merge: true });
+  // غلاف يحذف القيم undefined (Firestore لا يقبلها)
+  window.FBC = n => {
+    const c = firebase.firestore().collection(n);
+    return {
+      doc: id => { const r = c.doc(id); return { set: d => r.set(JSON.parse(JSON.stringify(d))), delete: () => r.delete() }; },
+      onSnapshot: (a, b) => c.onSnapshot(a, b)
+    };
+  };
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+const LOGO='data:image/png;base64,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';
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nat=(a,b)=>String(a).localeCompare(String(b),'ar',{numeric:true}),fmt=t=>t?new Date(t).toLocaleDateString('ar-EG'):'';
+let setupNeeded=false,settingUp=false,US=[],cu=null,ucol=null,rs=false,ru=false,UD='',UO=false,RN={},IT=[],icol=null,GC=[],ccol=null,OPEN=new Set(),RG={},GL=[],gcol=null,LH=null,ready=false,un=false,scol=null,A=[],R=[],col=null,rcol=null,tab='g',q='',sel='';
+const SEP='‖';
+function note(m){const t=$('#t');t.textContent=m;t.hidden=false;clearTimeout(note.h);note.h=setTimeout(()=>t.hidden=true,2600)}
+function loc(){try{localStorage.setItem('assets',JSON.stringify(A))}catch(e){}}
+async function put(a){
+ if(col){const{id,...d}=a;try{await col.doc(id).set(d)}catch(e){note('تعذّر الحفظ')}return}
+ const i=A.findIndex(x=>x.id==a.id);i<0?A.push(a):A[i]=a;loc();draw()
+}
+const sha=async t=>{t='srnty|'+t;try{const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}catch(e){let h=5381;for(const c of t)h=((h<<5)+h+c.charCodeAt(0))|0;return'f'+h}};
+const needLock=()=>true;
+const lid=u=>encodeURIComponent(u.toLowerCase()),mkEmail=u=>(u.toLowerCase().replace(/[^a-z0-9]/g,'')||'u')+Math.random().toString(36).slice(2,8)+'@srnty.app';
+const errm=e=>({'auth/weak-password':'كلمة المرور ضعيفة (6 أحرف على الأقل)','auth/network-request-failed':'تعذّر الاتصال بالإنترنت','auth/operation-not-allowed':'فعّل تسجيل الدخول بالبريد وكلمة المرور من Firebase','permission-denied':'لا توجد صلاحية، راجع قواعد Firestore'}[e&&e.code]||(e&&(e.code||e.message))||'خطأ غير معروف');
+let unsubs=[];
+function stopData(){unsubs.forEach(f=>{try{f()}catch(e){}});unsubs=[];col=rcol=icol=ccol=gcol=null;A=[];R=[];RG={};RN={};GL=[];GC=[];IT=[];US=[]}
+function startData(){
+ const C=FBC,er=()=>note('تعذّر تحميل البيانات');
+ col=C('assets');rcol=C('rooms');icol=C('items');ccol=C('cgroups');gcol=C('groups');
+ unsubs=[
+  col.onSnapshot(s=>{A=s.docs.map(d=>({...d.data(),id:d.id}));draw()},er),
+  rcol.onSnapshot(s=>{R=s.docs.map(d=>d.data().n).filter(Boolean);RG={};RN={};s.docs.forEach(d=>{const x=d.data();if(x.n&&x.g)RG[x.n]=x.g;if(x.n&&(x.nm||x.no))RN[x.n]={nm:x.nm||'',no:x.no||''}});draw()},er),
+  gcol.onSnapshot(s=>{GL=s.docs.map(d=>d.data().n).filter(Boolean);draw()},er),
+  ccol.onSnapshot(s=>{GC=s.docs.map(d=>d.data().n).filter(Boolean);draw()},er),
+  icol.onSnapshot(s=>{IT=s.docs.map(d=>({n:d.data().n,g:d.data().g||''})).filter(x=>x.n);draw()},er),
+  C('profiles').onSnapshot(s=>{US=s.docs.map(d=>({...d.data(),uid:d.id}));if($('#d').dataset.k=='usr')usrRender()},()=>{})
+ ]
+}
+function chk(){lockUI();draw()}
+function lockUI(){
+ const k=$('#lk'),hb=$('#hb');
+ if(window.FB_OFF){k.innerHTML=`<img src="${LOGO}" alt=""><h2>لم يتم إعداد الاتصال بقاعدة البيانات</h2><p>افتح الملف app/firebase-config.js وضع بيانات مشروع Firebase (راجع README-ar.md).</p>`;k.hidden=false;hb.innerHTML='';return}
+ if(!ready){k.dataset.m='';k.innerHTML=`<img src="${LOGO}" alt=""><p>جارٍ التحميل…</p>`;k.hidden=false;hb.innerHTML='';return}
+ if(!un){
+  const m=setupNeeded?'s':'l';hb.innerHTML='';
+  if(k.dataset.m==m&&!k.hidden)return;
+  k.dataset.m=m;k.innerHTML=`<img src="${LOGO}" alt=""><h2>${setupNeeded?'إعداد النظام: إنشاء حساب المدير':'تسجيل الدخول'}</h2><input id="lu" autocomplete="username" placeholder="اسم المستخدم"><input id="lp" type="password" autocomplete="current-password" placeholder="كلمة المرور${setupNeeded?' (6 أحرف على الأقل)':''}">${setupNeeded?'<input id="lp2" type="password" placeholder="تأكيد كلمة المرور">':''}<button class="p" data-x="unlock">${setupNeeded?'إنشاء الحساب':'دخول'}</button><p id="le"></p>`;k.hidden=false;
+  setTimeout(()=>{const e=$('#lu');e&&e.focus()},60);return
+ }
+ k.hidden=true;k.dataset.m='';
+ hb.innerHTML=`<span class="g" style="color:#fff;border-color:#3a3b40">👤 ${esc(cu.u)}</span>`+(cu.r=='admin'?'<button data-x="usr">المستخدمون</button>':'')+'<button data-x="lkc">كلمة المرور</button><button data-x="lkn">خروج</button>'
+}
+async function tryUnlock(){
+ if(setupNeeded)return doSetup();
+ const u=($('#lu')||{value:''}).value.trim(),p=($('#lp')||{value:''}).value,er=$('#le');
+ if(!u||!p){er.textContent='اكتب اسم المستخدم وكلمة المرور';return}
+ try{const l=await firebase.firestore().doc('logins/'+lid(u)).get();if(!l.exists)throw 0;await firebase.auth().signInWithEmailAndPassword(l.data().email,p)}
+ catch(e){er.textContent=e&&e.code=='auth/network-request-failed'?errm(e):'اسم المستخدم أو كلمة المرور غير صحيحة'}
+}
+async function doSetup(){
+ const u=$('#lu').value.trim(),p=$('#lp').value,p2=($('#lp2')||{value:''}).value,er=$('#le');
+ if(!u){er.textContent='اكتب اسم المستخدم';return}if(p.length<6){er.textContent='كلمة المرور 6 أحرف على الأقل';return}if(p!=p2){er.textContent='كلمتا المرور غير متطابقتين';return}
+ settingUp=true;
+ try{
+  const fs=firebase.firestore(),cr=await firebase.auth().createUserWithEmailAndPassword(mkEmail(u),p),b=fs.batch();
+  b.set(fs.doc('profiles/'+cr.user.uid),{u,r:'admin'});b.set(fs.doc('logins/'+lid(u)),{email:cr.user.email});b.set(fs.doc('meta/setup'),{at:Date.now()});await b.commit();
+  setupNeeded=false;cu={u,r:'admin',uid:cr.user.uid};un=true;settingUp=false;lockUI();startData();draw();note('تم إنشاء حساب المدير')
+ }catch(e){settingUp=false;er.textContent='تعذّر الإنشاء: '+errm(e);try{const c=firebase.auth().currentUser;if(c)await c.delete()}catch(x){}}
+}
+function logout(){firebase.auth().signOut()}
+function lkc(){
+ if(!cu)return;
+ ask('تغيير كلمة المرور',[{l:'كلمة المرور الحالية',t:'password',r:1},{l:'كلمة المرور الجديدة (6 أحرف على الأقل)',t:'password',r:1}],async v=>{
+  if(v[1].length<6)return note('كلمة المرور 6 أحرف على الأقل');
+  try{const au=firebase.auth(),cr=firebase.auth.EmailAuthProvider.credential(au.currentUser.email,v[0]);await au.currentUser.reauthenticateWithCredential(cr);await au.currentUser.updatePassword(v[1]);note('تم تغيير كلمة المرور')}
+  catch(e){note(e&&(e.code=='auth/wrong-password'||e.code=='auth/invalid-credential')?'كلمة المرور الحالية غير صحيحة':errm(e))}
+ })
+}
+async function adminSetUser(u,p){
+ const fs=firebase.firestore(),ex=US.find(y=>y.u.toLowerCase()==u.toLowerCase()),email=mkEmail(u);
+ const sec=firebase.apps.find(a=>a.name=='sec')||firebase.initializeApp(firebase.app().options,'sec');
+ const cr=await sec.auth().createUserWithEmailAndPassword(email,p);await sec.auth().signOut();
+ const b=fs.batch();b.set(fs.doc('profiles/'+cr.user.uid),{u:ex?ex.u:u,r:ex?ex.r:'user'});b.set(fs.doc('logins/'+lid(u)),{email});
+ if(ex&&ex.uid!=cr.user.uid)b.delete(fs.doc('profiles/'+ex.uid));await b.commit()
+}
+async function adminDel(t){const fs=firebase.firestore(),b=fs.batch();b.delete(fs.doc('profiles/'+t.uid));b.delete(fs.doc('logins/'+lid(t.u)));await b.commit()}
+function usrRender(){
+ const d=$('#d');
+ d.innerHTML=`<div><h3>المستخدمون</h3><p class="s">أنشئ حسابًا لكل شخص ترسل له الرابط أو البرنامج، وأعطه اسم المستخدم وكلمة المرور.</p><ul class="h" style="max-height:32vh;padding:0;list-style:none">${[...US].sort((x,y)=>nat(x.u,y.u)).map(x=>`<li style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--b);padding:6px 0"><b>${esc(x.u)}</b><span class="g${x.r=='admin'?' o':''}">${x.r=='admin'?'مدير':'مستخدم'}</span><span style="margin-inline-start:auto">${x.uid!=(cu&&cu.uid)?bt('upw',esc(x.u),'كلمة مرور جديدة')+bt('udel',esc(x.u),UD==x.u?'تأكيد الحذف':'حذف','r'):''}</span></li>`).join('')}</ul><label>اسم المستخدم<input id="nu" autocomplete="off"></label><label>كلمة المرور (6 أحرف على الأقل)<input id="np" type="password" autocomplete="new-password"></label><div class="bt"><button type="button" class="p" data-x="uadd2">حفظ (إضافة / تحديث كلمة المرور)</button><button type="button" data-x="uclose">إغلاق</button></div></div>`
+}
+function usr(){const d=$('#d');d.style.width='';d.onkeydown=null;UD='';d.dataset.k='usr';d.onclose=()=>{d.dataset.k='';d.returnValue=''};usrRender();d.showModal()}
+async function init(){
+ if(window.FB_OFF){ready=true;lockUI();return}
+ const fs=firebase.firestore(),au=firebase.auth();
+ try{setupNeeded=!(await fs.doc('meta/setup').get()).exists}catch(e){setupNeeded=false}
+ au.onAuthStateChanged(async u=>{
+  if(settingUp)return;
+  stopData();cu=null;un=false;
+  if(u){try{const p=await fs.doc('profiles/'+u.uid).get();if(p.exists){cu={u:p.data().u,r:p.data().r,uid:u.uid};un=true}else await au.signOut()}catch(e){}}
+  ready=true;lockUI();if(un)startData();draw()
+ })
+}
+const HDR=['الكود (اختياري)','اسم الأصل','الفئة','العدد','الغرفة','ملاحظات'];
+const loadSty=()=>window.XLSX&&XLSX.__sty?Promise.resolve():new Promise(ok=>{const e=document.createElement('script');e.src='https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js';e.onload=()=>{try{XLSX.__sty=1}catch(x){}ok()};e.onerror=()=>ok();document.head.appendChild(e)});
+function sheetOf(rows,pad){
+ const n=Math.max(rows.length,pad||0),ws=XLSX.utils.aoa_to_sheet([HDR,...rows]),bd={style:'thin',color:{rgb:'D9DBE0'}},B={top:bd,bottom:bd,left:bd,right:bd};
+ for(let r=0;r<=n;r++)for(let c=0;c<6;c++){const a=XLSX.utils.encode_cell({r,c});if(!ws[a])ws[a]={t:'s',v:''};
+  ws[a].s=r==0?{fill:{patternType:'solid',fgColor:{rgb:'161618'}},font:{bold:true,color:{rgb:'FFFFFF'},sz:12},alignment:{horizontal:'center',vertical:'center'},border:B}:{border:B,alignment:{horizontal:c==3?'center':'right',vertical:'center'},fill:r%2==0?{patternType:'solid',fgColor:{rgb:'F5F6F8'}}:undefined}}
+ ws['!ref']=XLSX.utils.encode_range({s:{r:0,c:0},e:{r:n,c:5}});ws['!cols']=[{wch:18},{wch:30},{wch:18},{wch:9},{wch:14},{wch:30}];ws['!rows']=[{hpt:28}];return ws
+}
+async function xlsxSave(wb,name){const dl=await(async()=>{try{return await window.claude?.use('downloads')}catch(e){return null}})();if(!dl)return note('التنزيل غير متاح هنا');try{await dl.save({filename:name,data:new Blob([XLSX.write(wb,{type:'array',bookType:'xlsx'})])})}catch(e){if(e&&e.code!='declined')note('تعذّر التنزيل')}}
+async function tmpl(){
+ if(!window.XLSX)return note('تعذّر تحميل مكتبة Excel');await loadSty();
+ const wb=XLSX.utils.book_new(),rs=allRooms();wb.Workbook={Views:[{RTL:true}]};
+ XLSX.utils.book_append_sheet(wb,sheetOf([],150),'الأصول');
+ const ti=XLSX.utils.aoa_to_sheet([['تعليمات استخدام نموذج أصول سيرينتي'],[''],['1) املأ ورقة «الأصول»: اسم الأصل مطلوب، ثم العدد والغرفة لكل صنف.'],['2) الكود اتركه فارغًا ليُرقَّم تلقائيًا (AST-0001...). وإذا كتبت كودًا مع عدد أكبر من 1 يصبح كود-001، كود-002...'],['3) الغرفة رقم أو اسم. الغرف الجديدة تُضاف للنظام تلقائيًا، والفارغة تذهب للمخزن.'],['4) احفظ الملف ثم استورده من زر «استيراد Excel» داخل النظام، وسيقرأ العدد والغرفة والكود تلقائيًا.'],[''],['مثال: اسم الأصل: كرسي | الفئة: أثاث | العدد: 4 | الغرفة: 101']]);ti['!cols']=[{wch:110}];
+ XLSX.utils.book_append_sheet(wb,ti,'تعليمات');
+ if(rs.length){const w=XLSX.utils.aoa_to_sheet([['الغرف المسجلة'],...rs.map(r=>[r])]);w['!cols']=[{wch:20}];XLSX.utils.book_append_sheet(wb,w,'الغرف')}
+ xlsxSave(wb,'نموذج أصول سيرينتي.xlsx')
+}
+async function expo(){
+ if(!A.length)return note('لا توجد أصول لتصديرها');if(!window.XLSX)return note('تعذّر تحميل مكتبة Excel');await loadSty();
+ const wb=XLSX.utils.book_new();wb.Workbook={Views:[{RTL:true}]};
+ XLSX.utils.book_append_sheet(wb,sheetOf([...A].sort((x,y)=>nat(x.code,y.code)).map(a=>[a.code,a.name,a.cat||'',1,a.room||'',a.note||''])),'الأصول');
+ xlsxSave(wb,'أصول سيرينتي '+new Date().toISOString().slice(0,10)+'.xlsx')
+}
+
+const nz=t=>String(t??'').replace(/\s/g,'').replace(/[أإآ]/g,'ا');
+const rinfo=r=>{const n=/^\d+$/.test(r),m=RN[r]||{};return{nm:m.nm||(n?'':r),no:m.no||(n?r:'')}};
+function styleRoomWs(ws,n){
+ const bd={style:'thin',color:{rgb:'D9DBE0'}},B={top:bd,bottom:bd,left:bd,right:bd},dk={patternType:'solid',fgColor:{rgb:'161618'}},W={bold:true,color:{rgb:'FFFFFF'},sz:12},last=3+Math.max(n,1);
+ for(let r=0;r<=last;r++)for(let c=0;c<3;c++){if(r==2)continue;const a=XLSX.utils.encode_cell({r,c});if(!ws[a])ws[a]={t:'s',v:''};
+  ws[a].s=(r<2&&c==0)||r==3?{fill:dk,font:W,alignment:{horizontal:'center',vertical:'center'},border:B}:r<2?{font:{bold:true,sz:12},alignment:{horizontal:'center',vertical:'center'},border:B}:{border:B,alignment:{horizontal:c==1?'center':'right',vertical:'center'},fill:r%2==0?{patternType:'solid',fgColor:{rgb:'F5F6F8'}}:undefined}}
+ ws['!merges']=[{s:{r:0,c:1},e:{r:0,c:2}},{s:{r:1,c:1},e:{r:1,c:2}}];ws['!ref']=XLSX.utils.encode_range({s:{r:0,c:0},e:{r:last,c:2}});ws['!cols']=[{wch:32},{wch:14},{wch:22}];ws['!rows']=[{hpt:24},{hpt:24},{hpt:10},{hpt:26}];return ws
+}
+function roomWs(r){
+ const i=rinfo(r),G=rgrp(r);
+ return styleRoomWs(XLSX.utils.aoa_to_sheet([['اسم الغرفة',i.nm],['رقم الغرفة',i.no],[],['اسم الأصل','العدد','المجموعة'],...G.map(x=>[x.name,x.list.length,x.cat])]),G.length)
+}
+async function rexp(only){
+ if(!window.XLSX)return note('تعذّر تحميل مكتبة Excel');
+ const rs=only?[only]:allRooms();if(!rs.length)return note('لا توجد غرف لتصديرها');
+ await loadSty();const wb=XLSX.utils.book_new(),used=new Set();wb.Workbook={Views:[{RTL:true}]};
+ rs.forEach(r=>{const nm=('غرفة '+r).replace(/[\[\]:*?\/\\]/g,' ').slice(0,28);let k=nm,i=1;while(used.has(k))k=nm.slice(0,25)+' '+(++i);used.add(k);XLSX.utils.book_append_sheet(wb,roomWs(r),k)});
+ xlsxSave(wb,(only?'غرفة '+only:'غرف سيرينتي '+new Date().toISOString().slice(0,10)).replace(/[\/\\:*?"<>|]/g,' ')+'.xlsx')
+}
+async function rtmpl(){
+ if(!window.XLSX)return note('تعذّر تحميل مكتبة Excel');await loadSty();
+ const wb=XLSX.utils.book_new();wb.Workbook={Views:[{RTL:true}]};
+ XLSX.utils.book_append_sheet(wb,styleRoomWs(XLSX.utils.aoa_to_sheet([['اسم الغرفة',''],['رقم الغرفة',''],[],['اسم الأصل','العدد','المجموعة']]),40),'غرفة');
+ const ti=XLSX.utils.aoa_to_sheet([['تعليمات نموذج الغرفة'],[''],['1) اكتب في أعلى الورقة اسم الغرفة ورقمها (أو أحدهما).'],['2) تحت العناوين اكتب اسم كل أصل وعدده، والمجموعة اختيارية (مثل: أثاث).'],['3) لإضافة أكثر من غرفة انسخ الورقة كاملة وغيّر اسم الغرفة ورقمها في الأعلى.'],['4) عند الرفع: إن كانت الغرفة موجودة تُضاف الأصول إليها، وإلا تُنشأ الغرفة وتُضاف أصولها بداخلها.']]);ti['!cols']=[{wch:100}];
+ XLSX.utils.book_append_sheet(wb,ti,'تعليمات');xlsxSave(wb,'نموذج غرفة سيرينتي.xlsx')
+}
+function parseRoomSheets(wb){
+ const out=[],skipped=[];
+ wb.SheetNames.forEach(sn=>{
+  const rows=XLSX.utils.sheet_to_json(wb.Sheets[sn],{header:1,defval:'',raw:false});
+  const val=lab=>{for(let i=0;i<Math.min(8,rows.length);i++){const r=rows[i],j=r.findIndex(c=>nz(c).includes(lab));if(j>=0){for(let k=j+1;k<r.length;k++){const v=String(r[k]??'').trim();if(v)return v}return''}}return''};
+  const nm=val('اسمالغرفة'),no=val('رقمالغرفة'),hi=rows.findIndex(r=>r.some(c=>nz(c).includes('اسمالاصل')));
+  if((!nm&&!no)||hi<0){if(nz(sn)!='تعليمات')skipped.push(sn);return}
+  const h=rows[hi],ci=k=>h.findIndex(c=>nz(c).includes(k)),iN=ci('اسمالاصل'),iQ=ci('العدد'),iG=ci('المجموعة'),m={};
+  rows.slice(hi+1).forEach(r=>{const n=String(r[iN]??'').trim();if(!n)return;const q=iQ>=0?parseInt(r[iQ]):NaN,g=iG>=0?String(r[iG]??'').trim():'',k=n.toLowerCase();if(!m[k])m[k]={n,g,q:0};if(g&&!m[k].g)m[k].g=g;m[k].q=Math.min(1000,m[k].q+(q>0?q:1))});
+  const items=Object.values(m);if(!items.length){skipped.push(sn);return}
+  const ex=allRooms(),key=[no,nm,nm&&no?nm+' - '+no:''].filter(Boolean).find(x=>ex.includes(x));
+  out.push({nm,no,items,exists:!!key,key:key||(nm&&no?nm+' - '+no:(no||nm))})
+ });
+ return{out,skipped}
+}
+async function addRoomMeta(key,nm,no){
+ RN[key]={nm,no};
+ if(rcol){try{await rcol.doc(rid(key)).set({n:key,g:'',nm,no})}catch(e){note('تعذّر الحفظ')}return}
+ R=[...new Set([...R,key])];locR();draw()
+}
+function mkMany(E){
+ const u=new Set(A.map(a=>a.code));let mx=Math.max(0,...A.map(x=>+((/(\d+)$/.exec(x.code)||[])[1]||0)));const L=[];
+ E.forEach(({it,q,room})=>{for(let i=0;i<q;i++){let c;do c='AST-'+String(++mx).padStart(4,'0');while(u.has(c));u.add(c);const o={id:'a'+Date.now().toString(36)+L.length+Math.random().toString(36).slice(2,5),mnt:false,reason:'',from:'',since:'',log:[],code:c,name:it.n,cat:it.g,room,note:''};lg(o,'استيراد من شيت الغرف: '+room);L.push(o)}});
+ return putMany(L)
+}
+async function applyRooms(P0){
+ const P=[...new Map(P0.map(p=>[p.key,p])).values()],ia=itemsAll(),newC=new Set(),add={},E=[],del=new Set(),st=[];
+ for(const p of P){
+  const isNew=!p.exists;if(isNew)await addRoomMeta(p.key,p.nm,p.no);
+  const cur={};A.filter(a=>!a.mnt&&a.room==p.key).sort((x,y)=>nat(x.code,y.code)).forEach(a=>{const k=String(a.name).trim().toLowerCase();(cur[k]=cur[k]||[]).push(a)});
+  const seen=new Set();let ad=0,rm=0;
+  p.items.forEach(it=>{
+   const k=it.n.trim().toLowerCase(),have=cur[k]||[];seen.add(k);
+   let g=it.g||(have[0]&&have[0].cat)||'';if(!g){const f=ia.find(x=>x.n==it.n);g=f?f.g:''}
+   if(g&&!allCats().includes(g))newC.add(g);if(g)(add[g]=add[g]||new Set()).add(it.n);
+   if(have.length>it.q){have.slice(it.q).forEach(y=>{del.add(y.id);rm++})}
+   else if(have.length<it.q){E.push({it:{g,n:it.n},q:it.q-have.length,room:p.key});ad+=it.q-have.length}
+  });
+  Object.keys(cur).forEach(k=>{if(!seen.has(k))cur[k].forEach(y=>{del.add(y.id);rm++})});
+  st.push({p,isNew,ad,rm,total:p.items.reduce((t,i)=>t+i.q,0)})
+ }
+ for(const g of newC)await addCat(g);
+ for(const g in add)await addItems(g,[...add[g]]);
+ if(del.size)await rmMany([...del]);
+ if(E.length)await mkMany(E);
+ note('تمت المزامنة: أُضيف '+st.reduce((t,x)=>t+x.ad,0)+' وحُذف '+st.reduce((t,x)=>t+x.rm,0));
+ return st
+}
+function impRooms(){
+ const d=$('#d');d.style.width='';d.onkeydown=null;d.onclose=()=>{d.returnValue=''};
+ d.innerHTML=`<form method="dialog"><h3>رفع شيت الغرف</h3><p class="s">ارفع ملف Excel المصدَّر من النظام أو النموذج. يُطبَّق الشيت فور اختياره، ويصبح محتوى كل غرفة فيه <b>مطابقًا له تمامًا</b>: ما في الشيت يُضاف أو يُعدَّل عدده، وما ليس فيه يُحذف من الغرفة. الغرفة غير الموجودة تُنشأ. الغرف التي ليست في الملف لا تتأثر.</p><input type="file" id="rf" accept=".xlsx,.xls"><div id="rp" class="s" style="margin-top:10px"></div><div class="bt"><button value="no" formnovalidate>إغلاق</button></div></form>`;
+ $('#rf').onchange=async e=>{
+  const f=e.target.files[0],p=$('#rp');p.innerHTML='';if(!f)return;
+  if(!window.XLSX){p.textContent='تعذّر تحميل مكتبة Excel';return}
+  try{
+   const r=parseRoomSheets(XLSX.read(await f.arrayBuffer(),{type:'array'}));
+   if(!r.out.length){p.innerHTML='لم أجد في الملف أي ورقة بصيغة الغرف (اسم الغرفة / رقم الغرفة في الأعلى، وتحتها اسم الأصل والعدد).'+(r.skipped.length?`<br>أوراق تم تجاهلها: ${esc(r.skipped.join('، '))}`:'');return}
+   p.textContent='جارٍ التطبيق…';
+   const st=await applyRooms(r.out);
+   p.innerHTML='<b style="color:var(--ok)">تم تطبيق الشيت</b><ul class="h" style="max-height:40vh">'+st.map(x=>`<li><b>${esc(x.p.nm&&x.p.no?x.p.nm+' - '+x.p.no:x.p.nm||x.p.no)}</b> — ${x.isNew?'غرفة جديدة':'غرفة موجودة'}: أُضيف ${x.ad}، حُذف ${x.rm}، الإجمالي بعد التطبيق ${x.total} قطعة</li>`).join('')+'</ul>'+(r.skipped.length?`<br>أوراق تم تجاهلها: ${esc(r.skipped.join('، '))}`:'')
+  }catch(x){p.textContent='تعذّرت قراءة الملف أو تطبيقه'}
+ };
+ d.showModal()
+}
+async function putMany(L){
+ if(col){try{for(let i=0;i<L.length;i+=50)await Promise.all(L.slice(i,i+50).map(a=>{const{id,...d}=a;return col.doc(id).set(d)}))}catch(e){note('تعذّر الحفظ')}return}
+ L.forEach(a=>{const i=A.findIndex(x=>x.id==a.id);i<0?A.push(a):A[i]=a});loc();draw()
+}
+const rid=n=>'r'+encodeURIComponent(n).replace(/%/g,'_');
+const locR=()=>{try{localStorage.setItem('rooms',JSON.stringify(R));localStorage.setItem('roomg',JSON.stringify(RG));localStorage.setItem('groups',JSON.stringify(GL));localStorage.setItem('cgroups',JSON.stringify(GC));localStorage.setItem('items',JSON.stringify(IT));localStorage.setItem('roomn',JSON.stringify(RN))}catch(e){}};
+async function addRooms(L,g){
+ g=g||'';
+ if(rcol){try{await Promise.all(L.map(n=>rcol.doc(rid(n)).set(rdoc(n,g))))}catch(e){note('تعذّر الحفظ')}return}
+ R=[...new Set([...R,...L])];L.forEach(n=>{if(g)RG[n]=g;else delete RG[n]});locR();draw()
+}
+async function delRoom(n){if(rcol){try{await rcol.doc(rid(n)).delete()}catch(e){note('تعذّر الحذف')}return}R=R.filter(x=>x!=n);delete RG[n];delete RN[n];locR();draw()}
+const allGroups=()=>[...new Set([...GL,...Object.values(RG)].filter(Boolean))].sort(nat);
+async function addGroup(n){if(gcol){try{await gcol.doc(rid(n)).set({n})}catch(e){note('تعذّر الحفظ')}return}GL=[...new Set([...GL,n])];locR();draw()}
+async function delGroup(n){
+ const rs=R.filter(r=>RG[r]==n);
+ if(gcol){try{await Promise.all(rs.map(r=>rcol.doc(rid(r)).set(rdoc(r,''))));await gcol.doc(rid(n)).delete()}catch(e){note('تعذّر الحذف')}return}
+ rs.forEach(r=>delete RG[r]);GL=GL.filter(x=>x!=n);locR();draw()
+}
+async function renGroup(o,n){
+ if(!n||n==o)return;if(allGroups().includes(n))return note('اسم المجموعة مستخدم');
+ const rs=R.filter(r=>RG[r]==o);
+ if(gcol){try{await gcol.doc(rid(n)).set({n});await Promise.all(rs.map(r=>rcol.doc(rid(r)).set(rdoc(r,n))));await gcol.doc(rid(o)).delete()}catch(e){note('تعذّر الحفظ')}return}
+ rs.forEach(r=>RG[r]=n);GL=GL.map(x=>x==o?n:x);if(!GL.includes(n))GL.push(n);locR();draw()
+}
+const allCats=()=>[...new Set([...GC,...A.map(a=>a.cat).filter(Boolean)])].sort(nat);
+async function addCat(n){if(ccol){try{await ccol.doc(rid(n)).set({n})}catch(e){note('تعذّر الحفظ')}return}GC=[...new Set([...GC,n])];locR();draw()}
+async function renCat(o,n){
+ if(!n||n==o)return;if(allCats().includes(n))return note('اسم المجموعة مستخدم');
+ const L=A.filter(a=>a.cat==o),its=IT.filter(x=>x.g==o);L.forEach(a=>a.cat=n);
+ if(ccol){try{await ccol.doc(rid(n)).set({n});await Promise.all(its.map(x=>icol.doc(iid(n,x.n)).set({n:x.n,g:n})));await Promise.all(its.map(x=>icol.doc(iid(o,x.n)).delete()));await ccol.doc(rid(o)).delete()}catch(e){note('تعذّر الحفظ');return}}
+ else{GC=GC.map(x=>x==o?n:x);if(!GC.includes(n))GC.push(n);IT=IT.map(x=>x.g==o?{n:x.n,g:n}:x);locR()}
+ await putMany(L)
+}
+async function delCat(c){
+ const ids=A.filter(a=>a.cat==c).map(a=>a.id),its=IT.filter(x=>x.g==c);
+ if(ccol){try{await Promise.all(its.map(x=>icol.doc(iid(c,x.n)).delete()));await ccol.doc(rid(c)).delete()}catch(e){note('تعذّر الحذف');return}}
+ else{GC=GC.filter(x=>x!=c);IT=IT.filter(x=>x.g!=c);locR()}
+ await rmMany(ids);if(!ccol)draw()
+}
+const iid=(g,n)=>'i'+encodeURIComponent(g+'|'+n).replace(/%/g,'_');
+const itemsOf=g=>[...new Set([...IT.filter(x=>x.g==g).map(x=>x.n),...A.filter(a=>a.cat==g).map(a=>a.name)])].sort(nat);
+const itemsAll=()=>{const o=[];allCats().forEach(g=>itemsOf(g).forEach(n=>o.push({g,n})));itemsOf('').forEach(n=>o.push({g:'',n}));return o};
+async function addItems(g,L){
+ if(icol){try{await Promise.all(L.map(n=>icol.doc(iid(g,n)).set({n,g})))}catch(e){note('تعذّر الحفظ')}return}
+ L.forEach(n=>{if(!IT.some(x=>x.g==g&&x.n==n))IT.push({n,g})});locR();draw()
+}
+async function delItem(g,n){
+ const ids=A.filter(a=>a.cat==g&&a.name==n).map(a=>a.id);
+ if(icol){try{await icol.doc(iid(g,n)).delete()}catch(e){note('تعذّر الحذف');return}}else{IT=IT.filter(x=>!(x.g==g&&x.n==n));locR()}
+ await rmMany(ids);if(!icol)draw()
+}
+async function renItem(g,o,n){
+ if(!n||n==o)return;if(itemsOf(g).includes(n))return note('الصنف موجود بالفعل في هذه المجموعة');
+ const L=A.filter(a=>a.cat==g&&a.name==o);L.forEach(a=>a.name=n);
+ if(icol){try{await icol.doc(iid(g,n)).set({n,g});await icol.doc(iid(g,o)).delete()}catch(e){note('تعذّر الحفظ');return}}else{IT=IT.map(x=>x.g==g&&x.n==o?{n,g}:x);locR()}
+ await putMany(L);if(!L.length&&!icol)draw()
+}
+function mkAssets(it,q,room){
+ const u=new Set(A.map(a=>a.code));let mx=Math.max(0,...A.map(x=>+((/(\d+)$/.exec(x.code)||[])[1]||0)));const L=[];
+ for(let i=0;i<q;i++){let c;do c='AST-'+String(++mx).padStart(4,'0');while(u.has(c));u.add(c);const o={id:'a'+Date.now().toString(36)+i+Math.random().toString(36).slice(2,5),mnt:false,reason:'',from:'',since:'',log:[],code:c,name:it.n,cat:it.g,room,note:''};lg(o,'توزيع على '+room);L.push(o)}
+ note('تمت إضافة '+q+' × '+it.n);return putMany(L)
+}
+const rgrp=r=>{const m={};A.filter(a=>!a.mnt&&a.room==r).forEach(a=>{const k=a.cat+SEP+a.name;(m[k]=m[k]||{cat:a.cat,name:a.name,list:[]}).list.push(a)});return Object.values(m).sort((x,y)=>nat(x.cat,y.cat)||nat(x.name,y.name))};
+function parseRooms(t){const out=[];t.split(/[,،\n]/).map(x=>x.trim()).filter(Boolean).forEach(x=>{const m=/^(\d+)\s*[-–]\s*(\d+)$/.exec(x);if(m){const a=+m[1],b=+m[2];if(b>=a&&b-a<500)for(let k=a;k<=b;k++)out.push(String(k))}else out.push(x)});return[...new Set(out)]}
+const rdoc=(n,g)=>({n,g,...(RN[n]||{})});
+const allRooms=()=>[...new Set([...R,...A.map(a=>a.room||a.from)].filter(Boolean))].sort(nat);
+async function rmMany(ids){
+ if(col){try{for(let i=0;i<ids.length;i+=50)await Promise.all(ids.slice(i,i+50).map(id=>col.doc(id).delete()))}catch(e){note('تعذّر الحذف')}return}
+ const z=new Set(ids);A=A.filter(x=>!z.has(x.id));loc();draw()
+}
+async function rm(id){if(col){try{await col.doc(id).delete()}catch(e){note('تعذّر الحذف')}return}A=A.filter(x=>x.id!=id);loc();draw()}
+const lg=(a,x)=>{a.log=[{t:new Date().toISOString(),x},...(a.log||[])].slice(0,40)};
+function ask(t,fs,ok,danger,html){
+ const d=$('#d');d.style.width='';d.onkeydown=null;d.innerHTML=`<form method="dialog"><h3>${t}</h3>${html||''}`+fs.map((f,i)=>`<label>${f.l}<input type="${f.t||'text'}" name="f${i}" value="${esc(f.v||'')}"${f.dl?` list="${f.dl}"`:''}${f.r?' required':''}></label>`).join('')+
+ `<div class="bt">${ok?`<button class="${danger?'x':'p'}" value="ok">تأكيد</button><button value="no" formnovalidate>إلغاء</button>`:'<button value="no">إغلاق</button>'}</div></form>`;
+ d.onclose=()=>{if(d.returnValue=='ok'&&ok)ok([...d.querySelectorAll('input')].map(e=>e.value.trim()));d.returnValue=''};d.showModal()
+}
+function edit(a,pr,pc){
+ const n=!a;a=a||{};
+ ask(n?'أصل جديد':'تعديل الأصل',[{l:'الكود (اتركه فارغًا للترقيم التلقائي)',v:a.code},{l:'اسم الأصل',v:a.name,r:1},{l:'الفئة / المجموعة',v:a.cat||pc,dl:'cl'},...(n?[{l:'الكمية (عدد القطع، حتى 500)',v:'1',r:1},{l:'الغرفة / الموقع (اختياري)',v:pr||'',dl:'rl'}]:[]),{l:'ملاحظات',v:a.note}],v=>{
+  const room=n?v[4]:a.room,nt=n?v[5]:v[3],qty=n?Math.min(500,Math.max(1,parseInt(v[3])||1)):1;
+  const mx=Math.max(0,...A.map(x=>+((/(\d+)$/.exec(x.code)||[])[1]||0)));
+  const codes=[];for(let i=0;i<qty;i++)codes.push(qty>1?(v[0]?v[0]+'-'+String(i+1).padStart(3,'0'):'AST-'+String(mx+i+1).padStart(4,'0')):(v[0]||'AST-'+String(mx+1).padStart(4,'0')));
+  if(codes.some(c=>A.some(x=>x.code==c&&x.id!=a.id)))return note('هذا الكود مستخدم لأصل آخر');
+  if(!n){Object.assign(a,{code:codes[0],name:v[1],cat:v[2],note:nt});return put(a)}
+  const L=codes.map((code,i)=>{const o={id:'a'+Date.now().toString(36)+i+Math.random().toString(36).slice(2,5),mnt:false,reason:'',from:'',since:'',log:[],code,name:v[1],cat:v[2],room:room||'',note:nt};lg(o,'تسجيل الأصل'+(room?' وتوزيعه على '+room:''));return o});
+  putMany(L);if(qty>1)note('تمت إضافة '+qty+' أصل')
+ })
+}
+const COLS={code:['كود','code','رقم الأصل'],qty:['كمية','عدد','qty','quantity'],room:['غرفة','موقع','room','location'],cat:['فئة','category','نوع','cat'],note:['ملاحظ','note'],name:['اسم','أصل','اصل','name','asset','بند','صنف']};
+function detect(rows,hd){
+ const H=hd?(rows[0]||[]).map(x=>String(x??'').trim().toLowerCase()):[],m={};
+ ['code','cat','note','name'].forEach(k=>{const i=H.findIndex((h,j)=>h&&!Object.values(m).includes(j)&&COLS[k].some(w=>h.includes(w)));if(i>=0)m[k]=i});
+ if(m.name==null){const D=rows.slice(hd?1:0,30),nc=Math.max(0,...D.map(r=>r.length));for(let j=0;j<nc;j++){const v=D.map(r=>String(r[j]??'').trim()).filter(Boolean);if(v.length&&v.filter(x=>!/^[\d.,\s]+$/.test(x)).length>v.length/2&&!Object.values(m).includes(j)){m.name=j;break}}}
+ return m
+}
+function build(S){
+ const used=new Set(A.map(a=>a.code)),errs=[],L=[];
+ let mx=Math.max(0,...A.map(x=>+((/(\d+)$/.exec(x.code)||[])[1]||0)));
+ const nxt=()=>{let c;do c='AST-'+String(++mx).padStart(4,'0');while(used.has(c));return c};
+ S.forEach(({it,qty,room})=>{for(let k=0;k<qty;k++){
+  const c=it.code?(qty>1?it.code+'-'+String(k+1).padStart(3,'0'):it.code):nxt();
+  if(used.has(c)){errs.push(c);continue}
+  used.add(c);const o={id:'a'+Date.now().toString(36)+L.length+Math.random().toString(36).slice(2,5),mnt:false,reason:'',from:'',since:'',log:[],code:c,name:it.name,cat:it.cat,room,note:it.note};
+  lg(o,'استيراد من Excel'+(room?' وتوزيعه على '+room:''));L.push(o)
+ }});
+ return{L,errs}
+}
+function imp(){
+ const d=$('#d');let wb,raw=[],D=[],hd=true,m={},tm=false,qc=-1,rc=-1;
+ const R=()=>[...d.querySelectorAll('tr[data-i]')],qn=tr=>Math.min(1000,Math.max(0,parseInt(tr.querySelector('.n').value)||0)),rm_=tr=>tr.querySelector('.rr');
+ const g=(r,k)=>m[k]==null?'':String(r[m[k]]??'').trim();
+ d.style.width='min(98vw,900px)';
+ d.onkeydown=e=>{if(e.key=='Enter'&&e.target.tagName=='INPUT')e.preventDefault()};
+ d.innerHTML=`<form method="dialog"><h3>استيراد أصول من Excel</h3><p class="s">اختر الملف فيظهر الشيت كاملًا كما هو. اكتب بنفسك <b>العدد</b> المطلوب إضافته و<b>الغرفة</b> أمام كل صنف تريده، والأصناف التي تتركها فارغة لن تُضاف.</p><input type="file" id="xf" accept=".xlsx,.xls,.csv"><div id="xp"></div><div class="bt"><button class="p" id="xo" value="ok" disabled>إضافة</button><button value="no" formnovalidate>إغلاق</button></div></form>`;
+ d.onclose=()=>{
+  if(d.returnValue=='ok'){
+   const S=R().filter(tr=>qn(tr)>0).map(tr=>{const r=D[+tr.dataset.i];return{it:{name:g(r,'name'),code:g(r,'code'),cat:g(r,'cat'),note:g(r,'note')},qty:qn(tr),room:rm_(tr).value.trim()}}).filter(x=>x.it.name),{L,errs}=build(S);
+   if(L.length){const ex=allRooms(),nr=[...new Set(L.map(a=>a.room).filter(r=>r&&!ex.includes(r)))];putMany(L);if(nr.length)addRooms(nr)}
+   note('تمت إضافة '+L.length+' أصل'+(errs.length?' وتخطي '+errs.length+' لتكرار الكود':''))
+  }
+  d.returnValue='';d.style.width='';d.onkeydown=null
+ };
+ const upd=()=>{const rs=R().filter(tr=>qn(tr)>0),n=rs.reduce((t,tr)=>t+qn(tr),0);
+  $('#xs').innerHTML=rs.length?`الأصناف المختارة: <b>${rs.length}</b> — إجمالي الأصول: <b>${n}</b> — مثال للاسم المقروء: «${esc(g(D[+rs[0].dataset.i],'name'))||'—'}»`:'لم تحدد أي عدد بعد';
+  $('#xo').disabled=!n||m.name==null};
+ const fill=tr=>{const v=$('#xr').value.trim();if(v&&!rm_(tr).value)rm_(tr).value=v};
+ const render=()=>{
+  D=raw.slice(hd?1:0).filter(r=>r&&r.some(c=>String(c).trim()!==''));
+  const T=tm&&hd,pq=r=>{const v=parseInt(r[qc]);return v>0?Math.min(1000,v):(String(r[m.name]??'').trim()?1:'')};
+  const nc=Math.max(0,...D.slice(0,200).map(r=>r.length),(raw[0]||[]).length),lb=j=>String(hd&&raw[0]?.[j]||'').trim()||'عمود '+(j+1),cols=[...Array(nc).keys()];
+  const sh=wb.SheetNames.length>1?`<label>الورقة<select id="xsh">${wb.SheetNames.map((n,k)=>`<option value="${k}"${n==wb.Sheets.__cur?' selected':''}>${esc(n)}</option>`).join('')}</select></label>`:'';
+  $('#xp').innerHTML=`${T?'<p class="s" style="margin:10px 0 0;color:var(--ok)">✓ تم التعرف على نموذج النظام: العدد والغرفة والكود مقروءة من الملف. راجعها وعدّل ما تريد قبل الإضافة.</p>':''}<div class="mp" style="margin-top:12px">${sh}`+[['name','اسم الأصل *'],['code','الكود'],['cat','الفئة'],['note','ملاحظات']].map(([k,l])=>`<label>${l}<select data-f="${k}"><option value="">— بدون —</option>${cols.map(j=>`<option value="${j}"${m[k]===j?' selected':''}>${esc(lb(j))}</option>`).join('')}</select></label>`).join('')+`</div>
+  <label class="s" style="display:block;margin-top:8px"><input type="checkbox" id="xh"${hd?' checked':''} style="display:inline;width:auto"> الصف الأول في الشيت عناوين أعمدة</label>
+  <div class="bar" style="margin:8px 0"><input id="xq" placeholder="بحث داخل الشيت" style="flex:2"><input id="xr" list="rl" placeholder="غرفة افتراضية" style="flex:1"><input id="xn" inputmode="numeric" placeholder="عدد" style="flex:0 0 70px"><button type="button" data-xa="set">تعبئة العدد للظاهر</button><button type="button" data-xa="clr">مسح الأعداد</button></div>
+  <div class="sc xt" style="max-height:48vh;overflow:auto"><table style="min-width:520px"><tr><th>#<th>العدد<th>الغرفة${cols.map(j=>`<th>${esc(lb(j))}`).join('')}</tr>`+
+  D.map((r,i)=>`<tr data-i="${i}" data-t="${esc(r.join(' ').toLowerCase())}"><td>${i+1}<td><input class="n" inputmode="numeric" placeholder="0" value="${T?pq(r):''}"><td><input class="rr" list="rl" placeholder="المخزن" value="${T?esc(String(r[rc]??'').trim()):''}">${cols.map(j=>`<td>${esc(r[j]??'')}`).join('')}</tr>`).join('')+`</table></div><p class="s" id="xs" style="margin:8px 0 0"></p>`;
+  upd()
+ };
+ const load=k=>{const n=wb.SheetNames[k];wb.Sheets.__cur=n;raw=XLSX.utils.sheet_to_json(wb.Sheets[n],{header:1,defval:'',raw:false});const H0=(raw[0]||[]).map(c=>String(c??'').trim());qc=H0.findIndex(c=>c.includes('العدد'));rc=H0.findIndex(c=>c.includes('الغرفة'));tm=qc>=0&&rc>=0&&H0.some(c=>c.includes('اسم الأصل'));m=detect(raw,hd);render()};
+ $('#xf').onchange=async e=>{
+  const f=e.target.files[0];$('#xo').disabled=true;$('#xp').innerHTML='';if(!f)return;
+  if(!window.XLSX){$('#xp').textContent='تعذّر تحميل مكتبة Excel، تحقق من الاتصال';return}
+  try{wb=XLSX.read(await f.arrayBuffer(),{type:'array'});load(0)}catch(x){$('#xp').textContent='تعذّرت قراءة الملف'}
+ };
+ const p=$('#xp');
+ p.oninput=e=>{const t=e.target;
+  if(t.id=='xq'){const q=t.value.trim().toLowerCase();R().forEach(tr=>tr.hidden=!!q&&!tr.dataset.t.includes(q))}
+  else if(t.id=='xr'){const v=t.value.trim();R().filter(tr=>qn(tr)>0).forEach(tr=>rm_(tr).value=v)}
+  else if(t.classList.contains('n')&&qn(t.closest('tr'))>0)fill(t.closest('tr'));
+  upd()};
+ p.onchange=e=>{const t=e.target;
+  if(t.dataset.f){m[t.dataset.f]=t.value===''?null:+t.value;upd()}
+  else if(t.id=='xh'){hd=t.checked;m=detect(raw,hd);render()}
+  else if(t.id=='xsh')load(+t.value)};
+ p.onclick=e=>{const b=e.target.closest('[data-xa]');if(!b)return;
+  if(b.dataset.xa=='clr')R().forEach(tr=>{tr.querySelector('.n').value=''});
+  else{const n=parseInt($('#xn').value)||0;if(!n)return note('اكتب العدد أولًا');R().filter(tr=>!tr.hidden).forEach(tr=>{tr.querySelector('.n').value=n;fill(tr)})}
+  upd()};
+ d.showModal()
+}
+function doMove(a,r){lg(a,r?`نقل من ${a.room||'المخزن'} إلى ${r}`:`إرجاع إلى المخزن من ${a.room}`);a.room=r;put(a)}
+function doMnt(a,why){Object.assign(a,{mnt:true,reason:why,from:a.room||'',room:'',since:new Date().toISOString()});lg(a,'أُرسل للصيانة: '+why+(a.from?' (من '+a.from+')':''));put(a)}
+function doBack(a,r){lg(a,'عاد من الصيانة'+(r?' إلى '+r:' إلى المخزن'));Object.assign(a,{mnt:false,room:r,reason:'',from:'',since:''});put(a)}
+const move=a=>ask('نقل «'+esc(a.name)+'»',[{l:'الغرفة / الموقع الجديد (اتركه فارغًا للإرجاع للمخزن)',v:a.room,dl:'rl'}],v=>doMove(a,v[0]));
+const toMnt=a=>ask('إرسال للصيانة',[{l:'سبب الصيانة / العطل',v:'',r:1}],v=>doMnt(a,v[0]),0,`<p>${esc(a.name)}</p>`);
+const back=a=>ask('عودة من الصيانة',[{l:'الغرفة / الموقع بعد الصيانة',v:a.from,dl:'rl'}],v=>doBack(a,v[0]));
+const histo=a=>ask('سجل «'+esc(a.name)+'»',[],null,0,`<ul class="h">${(a.log||[]).map(l=>`<li><b>${fmt(l.t)}</b> — ${esc(l.x)}</li>`).join('')||'<li>لا يوجد سجل</li>'}</ul>`);
+const delA=a=>ask('حذف الأصل',[],()=>rm(a.id),1,`<p>هل تريد حذف «${esc(a.name)}» نهائيًا؟</p>`);
+const bt=(x,i,l,c)=>`<button data-x="${x}" data-i="${i}"${c?` class="${c}"`:''}>${l}</button>`;
+function listA(){
+ const s=q.toLowerCase(),L=A.filter(a=>[a.code,a.name,a.cat,a.room,a.from].join(' ').toLowerCase().includes(s)).sort((x,y)=>nat(x.code,y.code));
+ if(!L.length)return`<div class="em">${A.length?'لا توجد نتائج':'لا توجد أصول بعد. ابدأ بإضافة أول أصل.'}</div>`;
+ return`<div class="sc"><table><tr><th>الكود<th>الأصل<th>الفئة<th>الحالة / الموقع<th></tr>`+L.map(a=>`<tr><td>${esc(a.code)}<td>${esc(a.name)}<td>${esc(a.cat)}<td>${a.mnt?'<span class="g w">في الصيانة</span>':a.room?`<span class="g o">${esc(a.room)}</span>`:'<span class="g">المخزن</span>'}<td class="ac">${a.mnt?bt('back',a.id,'عودة'):bt('move',a.id,'نقل')+bt('mnt',a.id,'صيانة')}${bt('log',a.id,'سجل')}${bt('edit',a.id,'تعديل')}${bt('del',a.id,'حذف','r')}</tr>`).join('')+`</table></div>`
+}
+const vA=()=>`<div class="bar"><input id="s" placeholder="بحث بالكود أو الاسم أو الغرفة" value="${esc(q)}"><button data-x="tm">⬇ نموذج شيت عام</button><button data-x="ex">⬇ تصدير الأصول</button><button data-x="imp">استيراد شيت عام</button><button class="p" data-x="new">+ أصل جديد</button></div><div id="list">${listA()}</div>`;
+const opts=ex=>A.filter(a=>!a.mnt&&a.room!=ex).sort((x,y)=>nat(x.code,y.code)).map(a=>`<option value="${a.id}">${esc(a.code)} – ${esc(a.name)}${a.room?' ('+esc(a.room)+')':''}</option>`).join('')||'<option value="">لا توجد أصول</option>';
+function vR(){
+ const c={};A.forEach(a=>{if(!a.mnt&&a.room)c[a.room]=(c[a.room]||0)+1});
+ const rs=allRooms(),gs=allGroups(),st=A.filter(a=>!a.mnt&&!a.room).length,un=rs.filter(r=>!RG[r]);
+ const card=r=>`<div class="rc"><b>${esc(r)}</b><span>${c[r]||0} أصل</span>${bt('open',esc(r),'دخول الغرفة','p')}</div>`;
+ const sec=(g,L)=>`<section class="rm"><h4>${g?esc(g):'بدون مجموعة'}<small>${L.length} غرفة</small><span style="float:left">${bt('gadd',esc(g),'+ غرفة','p')}${g?bt('gren',esc(g),'تعديل')+bt('gdel',esc(g),'حذف','r'):''}</span></h4>${L.length?`<div class="gr">${L.map(card).join('')}</div>`:'<div class="em" style="padding:10px">لا توجد غرف في هذه المجموعة</div>'}</section>`;
+ return`<div class="bar"><input id="gn" placeholder="اسم مجموعة جديدة (مثال: مكاتب، غرف نزلاء، مخازن)"><button class="p" data-x="addg">+ إضافة مجموعة</button></div><div class="bar"><button data-x="rtm">⬇ نموذج غرفة</button><button data-x="rex">⬇ تصدير كل الغرف</button><button class="p" data-x="rimp">⬆ استيراد غرف من Excel</button></div>`+
+ gs.map(g=>sec(g,rs.filter(r=>RG[r]==g))).join('')+((un.length||!gs.length)?sec('',un):'')+`<p class="s">أصول في المخزن بدون غرفة: ${st}</p>`
+}
+const grp=L=>{const g={};L.forEach(a=>{const k=String(a.name).trim();(g[k]=g[k]||{n:0,c:a.cat}).n++});return g};
+const sm=L=>{const g=grp(L);return`<p class="s" style="margin:0 0 10px"><b>الإجمالي:</b> ${Object.keys(g).sort(nat).map(k=>esc(k)+' × '+g[k].n).join('، ')}</p>`};
+function vV(){
+ const r=sel,L=A.filter(a=>!a.mnt&&a.room==r).sort((x,y)=>nat(x.code,y.code)),M=A.filter(a=>a.mnt&&a.from==r),G=rgrp(r),IA=itemsAll(),og={};
+ IA.forEach((x,i)=>(og[x.g]=og[x.g]||[]).push(`<option value="${i}">${esc(x.n)}</option>`));
+ return`<div class="bar"><button data-x="bk">→ كل الغرف</button><h2>${esc(r)} <small class="s">${RG[r]?'· '+esc(RG[r])+' ':''}(${L.length} أصل)</small></h2><button data-x="print">🖨 طباعة</button><button data-x="xl">⬇ Excel</button><button class="r" data-x="delroom">🗑 حذف الغرفة</button></div>`+
+ `<div class="bar"><label class="s" style="align-self:center">المجموعة:</label><select id="rg" style="flex:1"><option value="">بدون مجموعة</option>${allGroups().map(g=>`<option value="${esc(g)}"${RG[r]==g?' selected':''}>${esc(g)}</option>`).join('')}</select></div>`+
+ `<div class="bar"><select id="ci" style="flex:2">${IA.length?Object.keys(og).map(g=>`<optgroup label="${esc(g||'بدون فئة')}">${og[g].join('')}</optgroup>`).join(''):'<option value="">أضف أصنافًا من تبويب «الفئات والأصناف» أولًا</option>'}</select><input id="cq" inputmode="numeric" placeholder="العدد" style="flex:0 0 90px"><button class="p" data-x="ra">إضافة للغرفة</button></div>`+
+ (G.length?`<div class="sc"><table><tr><th>الصنف<th>المجموعة<th>العدد<th></tr>${G.map((x,i)=>`<tr><td>${esc(x.name)}<td>${esc(x.cat)||'—'}<td><b>${x.list.length}</b><td class="ac">${bt('rinc',i,'+ زيادة','p')+bt('rdec',i,'− إنقاص')+bt('rall',i,'حذف الكل','r')}</tr>`).join('')}<tr><td colspan="2"><b>الإجمالي</b><td><b>${L.length}</b><td></tr></table></div>`:'<div class="em">الغرفة فارغة. اختر صنفًا وحدد العدد من الأعلى.</div>')+
+ (L.length?`<details class="rm" style="margin-top:12px" data-c="__room"${OPEN.has('__room')?' open':''}><summary>عرض الأصول بالتفصيل (كود لكل قطعة)</summary><div class="bd"><div class="bar"><button class="r" data-x="bkdel">حذف المحدد</button><button data-x="bkst">إرجاع المحدد للمخزن</button></div><div class="sc"><table><tr><th><input type="checkbox" id="ska"><th>الكود<th>الأصل<th>الفئة<th>ملاحظات<th></tr>`+L.map(a=>`<tr><td><input type="checkbox" class="sk" value="${a.id}"><td>${esc(a.code)}<td>${esc(a.name)}<td>${esc(a.cat)}<td>${esc(a.note)}<td class="ac">${bt('move',a.id,'نقل')+bt('mnt',a.id,'صيانة')+bt('unas',a.id,'للمخزن')+bt('log',a.id,'سجل')+bt('del',a.id,'حذف','r')}</tr>`).join('')+`</table></div></div></details>`:'')+
+ (M.length?`<p class="s" style="margin-top:12px">في الصيانة (من هذه الغرفة): ${M.map(a=>esc(a.name)+' '+esc(a.code)).join('، ')}</p>`:'')
+}
+const trG=a=>`<tr><td>${esc(a.code)}<td>${esc(a.name)}<td>${a.mnt?'<span class="g w">في الصيانة</span>':a.room?`<span class="g o">${esc(a.room)}</span>`:'<span class="g">المخزن</span>'}<td class="ac">${a.mnt?bt('back',a.id,'عودة'):bt('move',a.id,'نقل')+bt('mnt',a.id,'صيانة')}${bt('log',a.id,'سجل')}${bt('edit',a.id,'تعديل')}${bt('del',a.id,'حذف','r')}</tr>`;
+function vG(){
+ const cs=allCats(),un=itemsOf('');
+ const row=(c,n)=>{const k=A.filter(a=>a.cat==c&&a.name==n).length,v=esc(c+SEP+n);return`<tr><td>${esc(n)}<td>${k}<td class="ac">${bt('iren',v,'تعديل')+bt('idel',v,'حذف','r')}</tr>`};
+ const sec=(c,L)=>`<details class="rm" data-c="${esc(c)}"${OPEN.has(c)?' open':''}><summary>${c?esc(c):'بدون فئة'}<small>${L.length} صنف</small><span class="sp">${c?bt('cadd',esc(c),'+ صنف','p')+bt('cren',esc(c),'تعديل')+bt('cdel',esc(c),'حذف','r'):''}</span></summary><div class="bd">${L.length?`<div class="sc"><table><tr><th>الصنف<th>الموزّع في الغرف<th></tr>${L.map(n=>row(c,n)).join('')}</table></div>`:'<div class="em" style="padding:10px">لا توجد أصناف. اضغط «+ صنف» لإضافة أول صنف.</div>'}</div></details>`;
+ return`<div class="bar"><input id="cn" placeholder="اسم مجموعة جديدة (مثال: أثاث، أدوات كهربائية)"><button class="p" data-x="addc">+ إضافة مجموعة</button></div>`+(cs.length||un.length?'':'<div class="em">ابدأ بإضافة مجموعة، ثم أضف أسماء الأصناف بداخلها. بعد ذلك ادخل أي غرفة من تبويب «الغرف» ووزّع الأصناف بالأعداد التي تريدها.</div>')+
+ cs.map(c=>sec(c,itemsOf(c))).join('')+(un.length?sec('',un):'')+
+ `<div class="bar" style="margin-top:14px"><button data-x="tm">⬇ نموذج شيت عام</button><button data-x="ex">⬇ تصدير الأصول</button><button data-x="imp">استيراد شيت عام</button><button class="r" data-x="wipe">حذف كل الأصول</button></div>`
+}
+function vM(){
+ const L=A.filter(a=>a.mnt).sort((x,y)=>(x.since<y.since?-1:1));
+ return`<div class="bar"><select id="qa">${opts()}</select><input id="qr" placeholder="سبب الصيانة / العطل"><button class="p" data-x="send">إرسال للصيانة</button></div>`+
+ (L.length?`<div class="sc"><table><tr><th>الكود<th>الأصل<th>السبب<th>من<th>منذ<th></tr>`+L.map(a=>`<tr><td>${esc(a.code)}<td>${esc(a.name)}<td>${esc(a.reason)}<td>${esc(a.from)||'—'}<td>${fmt(a.since)}<td class="ac">${bt('back',a.id,'عودة للخدمة','p')}</tr>`).join('')+`</table></div>`:'<div class="em">لا توجد أصول في الصيانة حاليًا</div>')
+}
+function draw(){
+ if(!ready||(needLock()&&!un)){$('#app').innerHTML='';return}
+ const T=A.length,M=A.filter(a=>a.mnt).length,U=A.filter(a=>!a.mnt&&!a.room).length,foc=document.activeElement?.id=='s';
+ const rooms=allRooms(),cats=allCats();
+ $('#app').innerHTML=`<datalist id="rl">${rooms.map(r=>`<option value="${esc(r)}">`).join('')}</datalist><datalist id="cl">${cats.map(r=>`<option value="${esc(r)}">`).join('')}</datalist>
+ <div class="k"><div><b>${T}</b>إجمالي الأصول</div><div><b>${T-M-U}</b>موزّعة على الغرف</div><div><b>${U}</b>في المخزن</div><div class="w"><b>${M}</b>في الصيانة</div></div>
+ <nav>${[['g','الفئات والأصناف'],['r','الغرف'],['m','الصيانة']].map(([k,l])=>`<button data-tab="${k}"${tab==k||(k=='r'&&tab=='v')?' class="on"':''}>${l}</button>`).join('')}</nav>`+(tab=='a'?vA():tab=='g'?vG():tab=='r'?vR():tab=='v'?vV():vM());
+ if(foc&&$('#s'))$('#s').focus()
+}
+document.addEventListener('click',e=>{
+ const b=e.target.closest('[data-tab],[data-x]');if(!b)return;if(b.closest('summary'))e.preventDefault();
+ if(b.dataset.tab){tab=b.dataset.tab;return draw()}
+ const x=b.dataset.x,a=A.find(y=>y.id==b.dataset.i);
+ if(x=='addg'){const v=($('#gn').value||'').trim();if(!v)return note('اكتب اسم المجموعة');if(allGroups().includes(v))return note('المجموعة موجودة بالفعل');return addGroup(v)}
+ if(x=='gadd'){const g=b.dataset.i||'';return ask('إضافة غرف'+(g?' إلى «'+esc(g)+'»':''),[{l:'اسم الغرفة (لعدة غرف افصل بفاصلة، أو اكتب نطاقًا مثل 101-120)',r:1}],v=>{const L=parseRooms(v[0]);if(!L.length)return note('اكتب اسم الغرفة');addRooms(L,g);note('تمت إضافة '+L.length+' غرفة')})}
+ if(x=='gren'){const g=b.dataset.i;return ask('تعديل اسم المجموعة',[{l:'الاسم الجديد',v:g,r:1}],v=>renGroup(g,v[0]))}
+ if(x=='gdel'){const g=b.dataset.i,n=R.filter(r=>RG[r]==g).length;return ask('حذف المجموعة',[],()=>delGroup(g),1,`<p>سيتم حذف المجموعة «${esc(g)}». الغرف بداخلها (${n}) لن تُحذف وستنتقل إلى «بدون مجموعة».</p>`)}
+ if(x=='addc'){const v=($('#cn').value||'').trim();if(!v)return note('اكتب اسم المجموعة');if(allCats().includes(v))return note('المجموعة موجودة بالفعل');return addCat(v)}
+ if(x=='cadd'){const g=b.dataset.i||'';return ask('إضافة أصناف إلى «'+esc(g)+'»',[{l:'اسم الصنف (لعدة أصناف افصل بفاصلة)',r:1}],v=>{const L=[...new Set(v[0].split(/[,،\n]/).map(t=>t.trim()).filter(Boolean))];if(!L.length)return;addItems(g,L);note('تمت إضافة '+L.length+' صنف')})}
+ if(x=='iren'){const[g,n]=(b.dataset.i||'').split(SEP);return ask('تعديل اسم الصنف',[{l:'الاسم الجديد',v:n,r:1}],v=>renItem(g,n,v[0]))}
+ if(x=='idel'){const[g,n]=(b.dataset.i||'').split(SEP),k=A.filter(y=>y.cat==g&&y.name==n).length;return ask('حذف الصنف',[],()=>delItem(g,n),1,`<p>سيتم حذف الصنف «${esc(n)}»${k?` وكل ما وُزّع منه (${k} أصل) من الغرف`:''} نهائيًا.</p>`)}
+ if(x=='wipe')return ask('حذف كل الأصول',[{l:'للتأكيد اكتب كلمة: حذف',r:1}],v=>{if(v[0]!='حذف')return note('لم يتم الحذف: كلمة التأكيد غير صحيحة');rmMany(A.map(y=>y.id)).then(()=>note('تم حذف كل الأصول'))},1,`<p>سيتم حذف جميع الأصول (${A.length}) نهائيًا من كل الغرف والمجموعات، ولا يمكن التراجع. المجموعات والأصناف والغرف تبقى كما هي.</p>`)
+ if(x=='ra'){const it=itemsAll()[+$('#ci').value],q=parseInt($('#cq').value);if(!it)return note('اختر الصنف');if(!q||q<1)return note('اكتب العدد');return mkAssets(it,Math.min(q,1000),sel)}
+ if(x=='rinc'||x=='rdec'||x=='rall'){
+  const t=rgrp(sel)[+b.dataset.i];if(!t)return;const it={g:t.cat,n:t.name};
+  if(x=='rinc')return ask('زيادة «'+esc(t.name)+'»',[{l:'العدد المراد إضافته',v:'1',r:1}],v=>{const q=parseInt(v[0]);if(q>0)mkAssets(it,Math.min(q,1000),sel)});
+  if(x=='rdec')return ask('إنقاص «'+esc(t.name)+'»',[{l:'العدد المراد إزالته (الموجود '+t.list.length+')',v:'1',r:1}],v=>{const q=Math.min(parseInt(v[0])||0,t.list.length);if(q>0)rmMany(t.list.slice(-q).map(y=>y.id)).then(()=>note('تمت إزالة '+q))});
+  return ask('حذف «'+esc(t.name)+'» من الغرفة',[],()=>rmMany(t.list.map(y=>y.id)),1,`<p>سيتم حذف كل القطع (${t.list.length}) من هذه الغرفة نهائيًا.</p>`)
+ }
+ if(x=='cren'){const c=b.dataset.i;return ask('تعديل اسم المجموعة',[{l:'الاسم الجديد',v:c,r:1}],v=>renCat(c,v[0]))}
+ if(x=='cdel'){const c=b.dataset.i,n=A.filter(a=>a.cat==c).length;return ask('حذف المجموعة',[],()=>delCat(c),1,`<p>سيتم حذف مجموعة «${esc(c)}». الأصول بداخلها (${n}) لن تُحذف وستنتقل إلى «بدون فئة».</p>`)}
+ if(x=='bkdel'||x=='bkst'){
+  const ids=[...document.querySelectorAll('.sk:checked')].map(e=>e.value);if(!ids.length)return note('حدد الأصول أولًا');
+  if(x=='bkst'){const L=ids.map(id=>A.find(y=>y.id==id)).filter(Boolean);L.forEach(a=>{lg(a,'إرجاع إلى المخزن من '+a.room);a.room=''});return putMany(L)}
+  return ask('حذف الأصول المحددة',[],()=>rmMany(ids),1,`<p>سيتم حذف ${ids.length} أصل نهائيًا من النظام، ولا يمكن التراجع.</p>`)
+ }
+ if(x=='unlock')return tryUnlock();
+ if(x=='lkc')return lkc();
+ if(x=='lkn')return logout();
+ if(x=='usr')return usr();
+ if(x=='uclose')return $('#d').close();
+ if(x=='upw'){$('#nu').value=b.dataset.i;$('#np').focus();return}
+ if(x=='udel'){const u=b.dataset.i;if(UD!=u){UD=u;return usrRender()}UD='';const t=US.find(y=>y.u==u);return t&&adminDel(t).then(()=>note('تم حذف المستخدم')).catch(e=>note(errm(e)))}
+ if(x=='uadd2'){
+  const u=$('#nu').value.trim(),p=$('#np').value;if(!u||p.length<6)return note('اكتب اسم المستخدم وكلمة مرور (6 أحرف على الأقل)');
+  const ex=US.find(y=>y.u.toLowerCase()==u.toLowerCase());if(ex&&ex.uid==(cu&&cu.uid))return note('غيّر كلمة مرورك من زر «كلمة المرور» في الرأس');
+  return adminSetUser(u,p).then(()=>{$('#nu').value='';$('#np').value='';note(ex?'تم تحديث كلمة المرور':'تمت إضافة المستخدم')}).catch(e=>note(errm(e)))
+ }
+ if(x=='tm')return tmpl();
+ if(x=='ex')return expo();
+ if(x=='open'){sel=b.dataset.i;tab='v';return draw()}
+ if(x=='bk'){tab='r';return draw()}
+ if(x=='newr')return edit(null,sel);
+ if(x=='doprint'){try{window.print()}catch(e){note('تعذّرت الطباعة من هذه الصفحة')}return}
+ if(x=='clp'){$('#pr').classList.remove('on');return}
+ if(x=='print'){
+  const L=A.filter(y=>!y.mnt&&y.room==sel);if(!L.length)return note('الغرفة فارغة');
+  const g=grp(L),ks=Object.keys(g).sort(nat),p=$('#pr');
+  p.innerHTML=`<div class="np"><button class="p" data-x="doprint">🖨 طباعة</button><button data-x="clp">إغلاق</button></div><div class="pg"><div class="ph"><img src="${LOGO}" alt="SRNTY"><div><small>جرد محتويات الغرفة</small><b>${esc(sel)}</b></div></div><div class="pb"><div class="st"><div>التاريخ<b>${fmt(new Date())}</b></div><div>عدد الأصناف<b>${ks.length}</b></div><div>إجمالي القطع<b>${L.length}</b></div></div><table><tr><th class="m">م<th>الصنف<th class="c">العدد</tr>${ks.map((k,i)=>`<tr><td class="m">${i+1}<td>${esc(k)}<td class="c">${g[k].n}</tr>`).join('')}<tr class="tt"><th><th>الإجمالي<th class="c">${L.length}</tr></table><div class="sg"><div>المسؤول</div><div>المراجع</div><div>التوقيع</div></div></div><div class="ft">مجموعة فنادق سيرينتي · إدارة الأصول الثابتة</div></div>`;
+  p.classList.add('on');p.scrollTop=0;setTimeout(()=>{try{window.print()}catch(e){}},250);return
+ }
+ if(x=='xl')return rexp(sel);
+ if(x=='rtm')return rtmpl();
+ if(x=='rex')return rexp();
+ if(x=='rimp')return impRooms();
+ if(x=='addr'){const t=A.find(y=>y.id==$('#qa').value);return t?doMove(t,sel):note('اختر الأصل')}
+ if(x=='delroom'){
+  const r=sel,L=A.filter(y=>!y.mnt&&y.room==r),M=A.filter(y=>y.mnt&&y.from==r).length;
+  return ask('حذف الغرفة',[],async()=>{tab='r';await rmMany(L.map(y=>y.id));await delRoom(r);draw();note('تم حذف الغرفة '+r)},1,`<p>سيتم حذف غرفة «${esc(r)}» ${L.length?`<b>مع ${L.length} أصل بداخلها</b> نهائيًا`:'(فارغة)'}، ولا يمكن التراجع.</p>${M?`<p class="s">الأصول المرسلة للصيانة من هذه الغرفة (${M}) لن تُحذف.</p>`:''}`)
+ }
+ if(x=='addrooms'){
+  const f=$('#r1').value.trim(),e=$('#r2').value.trim()||f;if(!f)return note('اكتب رقم الغرفة');
+  let L=[];if(/^\d+$/.test(f)&&/^\d+$/.test(e)){const i=+f,j=+e;if(j<i||j-i>=500)return note('نطاق غير صحيح (حتى 500 غرفة)');for(let k=i;k<=j;k++)L.push(String(k))}else L=[f];
+  const ex=allRooms();L=L.filter(n=>!ex.includes(n));if(!L.length)return note('هذه الغرف موجودة بالفعل');
+  note('تمت إضافة '+L.length+' غرفة');return addRooms(L)
+ }
+ if(x=='new')return edit();
+ if(x=='imp')return imp();
+ if(x=='assign'||x=='send'){
+  const t=A.find(y=>y.id==$('#qa').value),v=$('#qr').value.trim();
+  if(!t||!v)return note(x=='assign'?'اختر الأصل واكتب الغرفة':'اختر الأصل واكتب سبب الصيانة');
+  return x=='assign'?doMove(t,v):doMnt(t,v)
+ }
+ if(a)({edit,move,mnt:toMnt,back,log:histo,del:delA,unas:z=>doMove(z,'')})[x](a)
+});
+document.addEventListener('toggle',e=>{const d=e.target;if(d.dataset&&d.dataset.c!==undefined)d.open?OPEN.add(d.dataset.c):OPEN.delete(d.dataset.c)},true);
+document.addEventListener('change',e=>{if(e.target.id=='ska')document.querySelectorAll('.sk').forEach(c=>c.checked=e.target.checked);if(e.target.id=='rg')addRooms([sel],e.target.value)});
+document.addEventListener('keydown',e=>{if(e.key=='Enter'&&(e.target.id=='lp'||e.target.id=='lu'))tryUnlock()});
+document.addEventListener('input',e=>{if(e.target.id=='s'){q=e.target.value;$('#list').innerHTML=listA()}});
+$('#lg0').src=LOGO;lockUI();draw();init();
+</script></body></html>
